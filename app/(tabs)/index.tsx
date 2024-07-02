@@ -19,6 +19,9 @@ const App = () => {
         screenY = maxDistance * Math.sin(radian);
     }
 
+    screenX = screenX / 3 * 2;
+    screenY = screenY / 3 * 2;
+
     console.log(screenX);
 
     setJoystickCoords({ x, y });
@@ -40,7 +43,6 @@ const App = () => {
       <Text>Angle : ({dataAngle})</Text>
       <Text>Radian : ({radian})</Text>
     </View>
-    
   );
 };
 
