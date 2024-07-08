@@ -10,7 +10,7 @@ const App = () => {
   const [ws, setWs] = useState(null);
 
   useEffect(() => {
-    const websocket = new WebSocket('ws://192.168.122.50/ws'); // Remplacez par l'adresse IP de votre ESP32
+    const websocket = new WebSocket('wss://192.168.122.50/ws'); // Remplacez par l'adresse IP de votre ESP32
 
     websocket.onopen = () => {
       console.log('Connected to WebSocket server');
